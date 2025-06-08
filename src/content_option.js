@@ -1,15 +1,15 @@
-const logotext = "JOHN";
+const logotext = "King Khattab";
 const meta = {
     title: "John Doe",
     description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Khattab",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I love designing",
+        second: "I love to see your website top of the google search result",
+        third: "I love to work with clients",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
@@ -36,26 +36,22 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
+const education = [{
+        name: "HSC 2024",
+        mark: 4,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "SSC 2022",
+        mark: 5,
     },
     {
-        name: "Javascript",
-        value: 80,
+        name: "JSC 2019",
+        mark: 5,
     },
     {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+        name: "PSC 2016",
+        mark: 5,
+    }
 ];
 
 const services = [{
@@ -73,67 +69,119 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://picsum.photos/400/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
+        img: "https://picsum.photos/400/800/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://picsum.photos/400/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
+        img: "https://picsum.photos/400/600/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "https://picsum.photos/400/300/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
+        img: "https://picsum.photos/400/700/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
 
     {
-        img: "https://picsum.photos/400/600/?grayscale",
+        img: "https://picsum.photos/400/600/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "https://picsum.photos/400/300/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://picsum.photos/400/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/550/?grayscale",
+        img: "https://picsum.photos/400/550/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://picsum.photos/400/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
+        img: "https://picsum.photos/400/700/",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
 ];
+
+const GSskills = [
+    {   
+        title: 'Photoshop',
+        sliceColor: '#31A8FF',
+        value: 100,
+        image: "https://www.svgrepo.com/show/373967/photoshop2.svg"
+    },
+    {   
+        title: 'Illustrator',
+        sliceColor: '#FF9A00',
+        value: 100,
+        image: "https://www.svgrepo.com/show/452147/adobe-illustrator.svg"
+    },
+    {   
+        title: 'After Effects',
+        sliceColor: '#9999FF',
+        value: 100,
+        image: "https://www.svgrepo.com/show/452141/adobe-after-effects.svg"
+    },
+    {   
+        title: 'Premiere Pro',
+        sliceColor: '#9999FF',
+        value: 100,
+        image: "https://www.svgrepo.com/show/452150/adobe-premiere.svg"
+    },
+    {   
+        title: 'SEO',
+        sliceColor: '#3A3A3A',
+        value: 100,
+        image: "https://www.svgrepo.com/show/380849/seo-search-marketing-internet-network-2.svg"
+    },
+    {   
+        title: 'Backlink',
+        sliceColor: '#4DB6AC',
+        value: 100,
+        image: "https://www.svgrepo.com/show/424832/website-backlink-seo.svg"
+    },
+    {   
+        title: 'Digital Marketing',
+        sliceColor: '#F2F2F2',
+        value: 100,
+        image: "https://www.svgrepo.com/show/343854/digital-marketing-promotion-advertising.svg"
+    },
+    {   
+        title: 'Weblink',
+        sliceColor: '#13aa52',
+        value: 100,
+        image: "https://www.svgrepo.com/show/65892/web-link.svg"
+    }
+    
+]
 
 const contactConfig = {
     YOUR_EMAIL: "name@domain.com",
@@ -153,11 +201,12 @@ const socialprofils = {
     twitter: "https://twitter.com",
 };
 export {
+    education,
     meta,
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
+    GSskills,
     services,
     introdata,
     contactConfig,
