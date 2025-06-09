@@ -19,6 +19,9 @@ export const Portfolio = () => {
           <title> Portfolio | {meta.title} </title>{" "}
           <meta name="description" content={meta.description} />
         </Helmet>
+
+          <Skills/>
+
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4"> My Graphics </h1>{" "}
@@ -37,7 +40,7 @@ export const Portfolio = () => {
             );
           })}
         </div>
-        <Skills/>
+      
         <About/>
         <ContactUs/>
         <Footer/>

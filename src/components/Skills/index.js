@@ -13,17 +13,14 @@ const Skills = () => {
 return (
 <Container> 
     
-     <Row className="mb-5 mt-3 pt-md-3">
+     <Row className="mt-3 pt-md-3">
               <Col lg="8">
                 <h1 className="display-4 mb-4"> My Expertise </h1>{" "}
                 <hr className="t_border my-4 ml-0 text-left" />
               </Col>
             </Row>
-      {/* <h2 className="skills-title">
-        <span className="skills-subtitle">Achieved_</span>
-        <span className="skills-highlight">Skills</span> during last one year
-      </h2> */}
-      <div className="skills-grid">
+    
+      <div className="skills-grid md:mb-[200px]">
         {GSskills.map((skill, i) => (
           <div key={i} className="skill-item" data-aos="zoom-in" data-aos-duration="300">
            <div label="Arbitrary content" style={{ width: 100, height: 100 }}>

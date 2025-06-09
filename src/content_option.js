@@ -1,7 +1,7 @@
-const logotext = "King Khattab";
+const logotext = "Khattab";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Ahmed Bin Khattab",
+    description: "I’m Ahmed Bin Khattab Graphics desiginer _ and SEO expart, currently working in Freelancing",
 };
 
 const introdata = {
@@ -16,7 +16,7 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "Learn about Myself",
     aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
 };
 const worktimeline = [{
@@ -184,8 +184,8 @@ const GSskills = [
 ]
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_EMAIL: "khattab@gmail.com",
+    YOUR_FONE: "0175698730",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -195,7 +195,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    instagram: "https://instagram.com",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
