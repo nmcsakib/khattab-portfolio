@@ -17,7 +17,7 @@ return (
     
      <Row className="mt-3 pt-md-3">
               
-               <SectionTitle title={"My Experties"}/>.
+               <SectionTitle title={"My Experties"}/>
                 <hr className="t_border my-4 ml-0 text-left" />
               
             </Row>

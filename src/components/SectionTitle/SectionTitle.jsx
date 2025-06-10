@@ -41,7 +41,7 @@ const SectionTitle = ({ title, descrition='' }) => {
   }, []);
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden hide-scrollbar">
       <h1
         ref={animatedTextRef}
         style={{fontSize: '40px'}}

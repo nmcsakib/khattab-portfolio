@@ -26,7 +26,7 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
         
-            <SectionTitle title={"About Me"} />.
+            <SectionTitle title={"About Me"} />
             <hr className="t_border ml-0 text-left" />
         </Row>
         <Row className="sec_sp">

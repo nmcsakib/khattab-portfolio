@@ -75,7 +75,7 @@ export const ContactUs = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
          
-            <SectionTitle title={"Contact Me"}/>.
+            <SectionTitle title={"Contact Me"}/>
             <hr className="t_border ml-0 text-left" />
          
         </Row>

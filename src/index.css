@@ -44,6 +44,12 @@ ul {
     list-style: none;
 }
 
+.hide-scrollbar {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 h1,
 h2,
 h3,
