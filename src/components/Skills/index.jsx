@@ -1,13 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { buildStyles, CircularProgressbarWithChildren } from "react-circular-progressbar";
 import {GSskills} from '../../content_option'
 import { HideUntilLoaded } from 'react-animation'
 import {FiLoader} from 'react-icons/fi'
 import './style.css'
 // Animation
-import "react-circular-progressbar/dist/styles.css";
-import 'react-circular-progressbar/dist/styles.css';
 import SectionTitle from "../SectionTitle/SectionTitle";
+import { CircularProgressBar } from "@tomickigrzegorz/react-circular-progress-bar";
 
 const Skills = () => {
 
@@ -28,22 +26,50 @@ return (
            <div label="Arbitrary content" style={{ width: 100, height: 100 }}>
 
     
-         <CircularProgressbarWithChildren value={skill.value} styles={buildStyles({
+         {/* <CircularProgressbarWithChildren value={skill.value} styles={buildStyles({
             pathColor: skill.sliceColor
          })}
  round>
-        {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+       
         <HideUntilLoaded
   imageToLoad={skill.image}
    
           
   Spinner={() =>     <FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" />}
 >
-<img src={skill?.image} style={{ width: 50, marginTop: -5, backgroundColor: '#fff', borderRadius: '100%' }} alt="" />
+<img src={skill?.image} alt="" />
 
 </HideUntilLoaded>
         
-      </CircularProgressbarWithChildren>
+      </CircularProgressbarWithChildren> */}
+
+      <CircularProgressBar
+ colorCircle="#4a4a4a"
+ round
+colorSlice={skill.sliceColor}
+size={135}
+fontSize="0em"
+percent={skill.value}
+fontColor='#ffffff'
+>
+<img
+alt="Random"
+src={skill.image}
+style={{
+ 
+  borderRadius: '50%',
+  left: '65%',
+  padding: '2px',
+  position: 'absolute',
+  bottom: '-50%',
+  transform: 'translate(-50%, -90%)',
+  width: '60px',
+  height: '60px',
+  
+}}
+
+/>
+</CircularProgressBar>
      
     </div>
           </div>

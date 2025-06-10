@@ -67,10 +67,9 @@ import 'react-medium-image-zoom/dist/styles.css'
 import { About } from "../about";
 import { ContactUs } from "../contact";
 import Footer from "../../components/Footer";
-import { Container } from 'react-bootstrap';
 import { HideUntilLoaded } from 'react-animation'
 import { FiLoader } from 'react-icons/fi'
- import { dataportfolio, meta } from "../../content_option";
+ import { dataportfolio } from "../../content_option";
 import Skills from '../../components/Skills';
 
 export const Portfolio = () => {
@@ -126,14 +125,14 @@ export const Portfolio = () => {
 
                     Spinner={() => <div className="h-96 w-20"><FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" /></div>}
                   >
-                    <img src={data.img} alt="" style={{ cursor: 'pointer' }} />
+                    <img src={data.img} alt="" style={{ cursor: 'pointer', position: 'relative', zIndex: '10' }} />
                   </HideUntilLoaded>
                 </Zoom>
               </div>
             ))}
           </div>
           <div className="content">
-            <h1 className='text-lg' data-content="KHATTAB">KHATTAB</h1>
+            <h1 className='text-lg' data-content="KHATTAB GRAPHICS">KHATTAB <br /> GRAPHICS</h1>
 
             <div className="model "></div>
           </div>

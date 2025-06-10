@@ -2050,6 +2050,13 @@
     "@tailwindcss/oxide" "4.1.8"
     tailwindcss "4.1.8"
 
+"@tomickigrzegorz/react-circular-progress-bar@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tomickigrzegorz/react-circular-progress-bar/-/react-circular-progress-bar-1.1.2.tgz#88897759ac2b1a2be7ec9cb0e22e5075c497f5f5"
+  integrity sha512-GECg3VjJ/YZZd2XJXzDNxpHSa7nZ41hb1iX9AUUtgSbRgAAMk+eA805JD1UEyziHJ6f7kCwgGpaqTWDl32VtoQ==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -7760,11 +7767,6 @@ react-bootstrap@^2.7.0:
     react-transition-group "^4.4.2"
     uncontrollable "^7.2.1"
     warning "^4.0.3"
-
-react-circular-progressbar@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.2.0.tgz#282b7351dab2fd19c6d2c7f3cc698ed546c71c86"
-  integrity sha512-cgyqEHOzB0nWMZjKfWN3MfSa1LV3OatcDjPz68lchXQUEiBD5O1WsAtoVK4/DSL0B4USR//cTdok4zCBkq8X5g==
 
 react-dev-utils@^12.0.1:
   version "12.0.1"

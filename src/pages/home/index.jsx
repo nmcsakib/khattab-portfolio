@@ -1,10 +1,10 @@
-import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-
+import { HideUntilLoaded } from 'react-animation'
+import { FiLoader } from 'react-icons/fi'
 export const Home = () => {
   return (
     <>
@@ -37,8 +37,15 @@ export const Home = () => {
         </Helmet>
         <div className="flex flex-col md:flex-row-reverse justify-between items-center pt-20">
           <div className="animated-text mt-52 md:mt-0"></div>
+            <HideUntilLoaded imageToLoad={introdata.your_img_url}
+   
           
-    <img className='w-44 md:w-54 absolute md:right-5 rounded-xl' src={introdata.your_img_url} alt="" />
+  Spinner={() =>     <FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8] w-44 md:w-54 relative top-0 left-56 md:right-5 rounded-xl " />}
+>
+ <img className='w-44 md:w-54 relative top-0 left-56 md:right-5 rounded-xl' src={introdata.your_img_url} alt="" />
+
+</HideUntilLoaded>
+   
 
 
 

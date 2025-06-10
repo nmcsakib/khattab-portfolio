@@ -86,9 +86,12 @@
     left: 40%;
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
+    animation: autoRun 40s linear infinite;
     z-index: 2;
+    
 }
+
+
 
 @keyframes autoRun {
     from {
@@ -109,7 +112,7 @@
 
 .banner .slider .item img {
     width: 70%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -155,7 +158,7 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 10%;
     background-size: auto 130%;
     background-repeat: no-repeat;
@@ -192,17 +195,22 @@
 }
 
 @media screen and (max-width: 767px) {
-    .banner .content .model {
-        width: 90vw;
-        position: absolute;
-        bottom: 50px;
-        left: -10%;
+    
+    .banner{
+        height: 350px;
     }
+    .banner .content .model {
+        display: none;
+    }
+
+    .banner .slider .item img {
+    height: 100%;
+}
 
     .banner .slider {
         width: 100px;
         height: 150px;
-        left: calc(30%);
+        left: calc(50%);
     }
 
     .banner .slider .item {
@@ -211,10 +219,8 @@
     }
 
     .banner .content h1 {
-        font-size: 4em;
-        position: absolute;
-        left: -10%;
-        bottom: 150px;
+        font-size: 60px;
+        text-align: center;
         
     }
     .banner .content h1::after {
