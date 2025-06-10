@@ -1,4 +1,5 @@
 const logotext = "Khattab";
+
 const meta = {
     title: "Ahmed Bin Khattab",
     description: "I’m Ahmed Bin Khattab Graphics desiginer _ and SEO expart, currently working in Freelancing",
@@ -12,7 +13,7 @@ const introdata = {
         third: "I love to work with clients",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: "https://picsum.photos/400/600/",
 };
 
 const dataabout = {

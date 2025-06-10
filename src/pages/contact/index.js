@@ -5,6 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -73,10 +74,10 @@ export const ContactUs = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
+         
+            <SectionTitle title={"Contact Me"}/>.
+            <hr className="t_border ml-0 text-left" />
+         
         </Row>
         <Row className="sec_sp">
           <Col lg="12">
@@ -152,7 +153,7 @@ export const ContactUs = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                  <button className="border px-3 py-2 active:text-[#494949] transition-all" type="submit">
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
                 </Col>

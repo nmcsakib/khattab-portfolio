@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
+import 'react-animation/dist/keyframes.css'
 import {
   dataabout,
   meta,
@@ -9,8 +10,12 @@ import {
   education,
   services,
 } from "../../content_option";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 export const About = () => {
+
+  
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -20,10 +25,9 @@ export const About = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
+        
+            <SectionTitle title={"About Me"} />.
+            <hr className="t_border ml-0 text-left" />
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
@@ -68,7 +72,7 @@ export const About = () => {
                     <div
                       className="progress-bar"
                       style={{
-                        width: `${data.mark*20}%`,
+                        width: `${data.mark * 20}%`,
                       }}
                     >
                       <div className="progress-value">{data.mark}.00</div>

@@ -7,6 +7,27 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
+    <>
+  <style>
+    {`
+     body::before {
+          position: absolute;
+          width: min(1400px, 90vw);
+          top: 10%;
+          left: 50%;
+          height: 90%;
+          transform: translateX(-50%);
+          content: '';
+          background-image: url(images/bg.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top center;
+          pointer-events: none;
+        }
+    `}
+  </style>
+    
+    
     <HelmetProvider>
       <section id="home" className="home container mx-auto">
         <Helmet>
@@ -40,21 +61,17 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
-                <div className="">
-                  <Link to="/portfolio" className="text_2 mb-5">
-                    <div id="button_p" className="ac_btn btn ">
+                <div className="flex gap-3 md:flex-row flex-col">
+                  <Link to="/portfolio" className="bg-white hover:bg-black mb-5">
+                    <div id="button_p" className="border px-3 py-2 text-black transition-all mt-[10px] md:mt-0">
                       My Portfolio
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
+                   
                     </div>
                   </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn mt-[10px] md:mt-0">
+                  <Link to="/contact" className="">
+                    <div id="button_h" className="border px-3 py-2 active:text-black transition-all mt-[10px] md:mt-0">
                       Contact Me
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
+                     
                     </div>
                   </Link>
                 </div>
@@ -64,5 +81,6 @@ export const Home = () => {
         </div>
       </section>
     </HelmetProvider>
+    </>
   );
 };
