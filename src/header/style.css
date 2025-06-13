@@ -2,10 +2,12 @@
     top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 .menu__button {
     color: var(--text-color);
+    
 }
 
 .menu__button:focus,
@@ -19,6 +21,7 @@
     height: 2em;
     fill: var(--text-color-2);
     color: var(--text-color-2);
+    margin-top: 50px;
 }
 
 .nav_ac {

@@ -1,35 +1,16 @@
+import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import { HideUntilLoaded } from 'react-animation'
-import { FiLoader } from 'react-icons/fi'
+
 export const Home = () => {
   return (
     <>
-  <style>
-    {`
-     body::before {
-          position: absolute;
-          width: min(1400px, 90vw);
-          top: 10%;
-          left: 50%;
-          height: 90%;
-          transform: translateX(-50%);
-          content: '';
-          background-image: url(images/bg.png);
-          background-size: 100%;
-          background-repeat: no-repeat;
-          background-position: top center;
-          pointer-events: none;
-        }
-    `}
-  </style>
-    
     
     <HelmetProvider>
-      <section id="home" className="home container mx-auto">
+      <section id="" className=" container mx-auto">
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
@@ -37,15 +18,8 @@ export const Home = () => {
         </Helmet>
         <div className="flex flex-col md:flex-row-reverse justify-between items-center pt-20">
           <div className="animated-text mt-52 md:mt-0"></div>
-            <HideUntilLoaded imageToLoad={introdata.your_img_url}
-   
+    <img className='md:w-1/5 w-2/3 md:right-5 absolute md:bottom-0 top-10 md:top-20 rounded-xl border' src={introdata.your_img_url} alt="" />
           
-  Spinner={() =>     <FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8] w-44 md:w-54 relative top-0 left-56 md:right-5 rounded-xl " />}
->
- <img className='w-44 md:w-54 relative top-0 left-56 md:right-5 rounded-xl' src={introdata.your_img_url} alt="" />
-
-</HideUntilLoaded>
-   
 
 
 

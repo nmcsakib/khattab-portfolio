@@ -22,7 +22,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="cursor__dot">
+      <div className="">
         {/* <AnimatedCursor
           innerSize={15}
           outerSize={15}
@@ -34,6 +34,24 @@ export default function App() {
       </div>
       <ScrollToTop>
         <Headermain />
+         <style>
+    {`
+     body::before {
+          position: absolute;
+          width: min(1400px, 90vw);
+          top: 10%;
+          left: 50%;
+          height: 90%;
+          transform: translateX(-50%);
+          content: '';
+          background-image: url(images/bg.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top center;
+          pointer-events: none;
+        }
+    `}
+  </style>
         <AppRoutes />
       </ScrollToTop>
     </Router>

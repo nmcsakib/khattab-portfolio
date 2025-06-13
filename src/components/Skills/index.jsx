@@ -1,7 +1,5 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {GSskills} from '../../content_option'
-import { HideUntilLoaded } from 'react-animation'
-import {FiLoader} from 'react-icons/fi'
 import './style.css'
 // Animation
 import SectionTitle from "../SectionTitle/SectionTitle";

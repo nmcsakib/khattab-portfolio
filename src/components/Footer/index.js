@@ -1,14 +1,16 @@
 import React from "react";
+import { logotext } from "../../content_option";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="footer-logo">🌟 MyLogo</div>
+        <Link to='/' className="footer-logo flex justify-center items-center invert-25"><img className="w-36" src={logotext} alt="khattab logo"/></Link>
         <nav className="footer-nav">
-          <a href="#home" className="footer-link">Home</a>
-          <a href="#about" className="footer-link">About Me</a>
-          <a href="#contact" className="footer-link">Contact</a>
+          <Link to='/' className="footer-link">Home</Link>
+          <Link to='/about' className="footer-link">About Me</Link>
+          <Link to="/contact" className="footer-link">Contact</Link>
         </nav>
         <br/>
         <div className="footer-copy">© {new Date().getFullYear()} Khattab. All rights reserved.</div>

@@ -1,67 +1,5 @@
-// import React from "react";
-// import "./style.css";
-// import { Helmet, HelmetProvider } from "react-helmet-async";
-// import { Container, Row, Col } from "react-bootstrap";
-// import { dataportfolio, meta } from "../../content_option";
-// import { About } from "../about";
-// import { ContactUs } from "../contact";
-// import Zoom from 'react-medium-image-zoom'
-// import 'react-medium-image-zoom/dist/styles.css'
-// import Footer from "../../components/Footer";
-// import Skills from "../../components/Skills";
-// import { HideUntilLoaded } from 'react-animation'
-// import { FiLoader } from 'react-icons/fi'
-// import SectionTitle from "../../components/SectionTitle/SectionTitle";
-
-// export const Portfolio = () => {
-//   return (
-//     <HelmetProvider>
-//       <Container className="About-header">
-//         <Helmet>
-//           <meta charSet="utf-8" />
-//           <title> Portfolio | {meta.title} </title>{" "}
-//           <meta name="description" content={meta.description} />
-//         </Helmet>
-
-//        
-
-//         <Row className="mb-5 mt-3 pt-md-3">
-//           <Col lg="8">
-//            <SectionTitle title={'My Graphics'}/>
-//             <hr className="t_border my-4 ml-0 text-left" />
-//           </Col>
-//         </Row>
-//         <div className="mb-5 po_items_ho">
-//           {dataportfolio.map((data, i) => {
-//             return (
-//               <div key={i} className="po_item">
-                // <Zoom>
-                //   <HideUntilLoaded
-                //     imageToLoad={data.img}
-
-
-                //     Spinner={() => <div className="h-96 w-20"><FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" /></div>}
-                //   >
-                //     <img src={data.img} alt="" style={{ cursor: 'none' }} />
-                //   </HideUntilLoaded>
-                // </Zoom>
-
-//               </div>
-//             );
-//           })}
-//         </div>
-
-//         <About />
-//         <ContactUs />
-//         <Footer />
-//       </Container>
-//     </HelmetProvider>
-//   );
-// };
-
-
-
 import './style.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { About } from "../about";
@@ -69,12 +7,19 @@ import { ContactUs } from "../contact";
 import Footer from "../../components/Footer";
 import { HideUntilLoaded } from 'react-animation'
 import { FiLoader } from 'react-icons/fi'
- import { dataportfolio } from "../../content_option";
+ import { dataportfolio, meta } from "../../content_option";
 import Skills from '../../components/Skills';
+import { Link } from 'react-router-dom';
 
 export const Portfolio = () => {
   return (
-    <>
+          <HelmetProvider>
+  
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Portfolio </title>{" "}
+        <meta name="description" content={meta.description} />
+      </Helmet>
       <style>{`
         * {
           margin: 0;
@@ -137,13 +82,18 @@ export const Portfolio = () => {
             <div className="model "></div>
           </div>
         </div>
+          <div className='flex w-full justify-center items-center'>
+            <Link to="/all-graphics" className="border px-5 py-2 active:text-[#494949] active:bg-white transition-all" type="submit">
+        See All
+                  </Link>
+          </div>
          <Skills />
         <About />
         <ContactUs />
         <Footer />
-
       </section>
-    </>
+    
+</HelmetProvider>
   );
 };
 

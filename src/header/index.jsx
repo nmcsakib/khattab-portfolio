@@ -18,7 +18,7 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
+           <img className="w-36 invert" src={logotext} alt="khattab"/>
           </Link>
           <div className="d-flex align-items-center">
           

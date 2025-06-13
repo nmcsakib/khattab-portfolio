@@ -1,4 +1,4 @@
-const logotext = "Khattab";
+const logotext = "https://i.ibb.co/LX1865Xn/khattab-lobo.png";
 
 const meta = {
     title: "Ahmed Bin Khattab",
@@ -13,28 +13,19 @@ const introdata = {
         third: "I love to work with clients",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://picsum.photos/400/600/",
+    your_img_url: "https://i.ibb.co/5gV32Mrp/model.png",
 };
 
 const dataabout = {
     title: "Learn about Myself",
     aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
+const worktimeline = [
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+        jobtitle: "E-learning and Earning",
+        where: "Noakhali",
+        date: "2025",
+    }
 ];
 
 const education = [{
@@ -132,6 +123,23 @@ const dataportfolio = [{
     },
 ];
 
+const graphics = [
+  { src: "https://picsum.photos/700/700/", width: 800, height: 600 },
+  { src: "https://picsum.photos/400/700/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/500/700/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/400/500/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/300/800/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/500/600/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/400/400/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/500/700/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/500/500/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/400/700/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/400/900/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/900/700/", width: 1600, height: 900 },
+  { src: "https://picsum.photos/400/700/", width: 1600, height: 900 },
+];
+
+
 const GSskills = [
     {   
         title: 'Photoshop',
@@ -185,7 +193,7 @@ const GSskills = [
 ]
 
 const contactConfig = {
-    YOUR_EMAIL: "khattab@gmail.com",
+    YOUR_EMAIL: "nmcsakib.1@gmail.com",
     YOUR_FONE: "0175698730",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
@@ -213,4 +221,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    graphics
 };
