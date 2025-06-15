@@ -9,37 +9,19 @@ const Skills = () => {
 
 
 return (
-<div className="container" style={{marginBottom: '150px'}}> 
+<div className="container mx-auto" style={{margin: '100px 0px 150px'}}> 
     
-     <Row className="mt-3 pt-md-3">
+     <Row>
               
                <SectionTitle title={"My Experties"}/>
                 <hr className="t_border my-4 ml-0 text-left" />
               
             </Row>
     
-      <div className="skills-grid mb-[200px]">
+      <div className="skills-grid mb-[200px] justify-center items-center">
         {GSskills.map((skill, i) => (
           <div key={i} className="skill-item" data-aos="zoom-in" data-aos-duration="300">
-           <div label="Arbitrary content" style={{ width: 100, height: 100 }}>
-
-    
-         {/* <CircularProgressbarWithChildren value={skill.value} styles={buildStyles({
-            pathColor: skill.sliceColor
-         })}
- round>
-       
-        <HideUntilLoaded
-  imageToLoad={skill.image}
-   
-          
-  Spinner={() =>     <FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" />}
->
-<img src={skill?.image} alt="" />
-
-</HideUntilLoaded>
         
-      </CircularProgressbarWithChildren> */}
 
       <CircularProgressBar
  colorCircle="#4a4a4a"
@@ -60,7 +42,7 @@ style={{
   padding: '2px',
   position: 'absolute',
   bottom: '-50%',
-  transform: 'translate(-50%, -90%)',
+  transform: 'translate(-90%, -180%)',
   width: '60px',
   height: '60px',
   
@@ -70,7 +52,6 @@ style={{
 </CircularProgressBar>
      
     </div>
-          </div>
         ))}
       </div>
     

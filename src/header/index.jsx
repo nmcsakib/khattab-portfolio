@@ -17,12 +17,12 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-           <img className="w-36 invert" src={logotext} alt="khattab"/>
+          <Link  className="" to="/">
+           <div className="w-18 h-18"><img className="w-full h-full object-cover object-center invert" src={logotext} alt="khattab"/></div>
           </Link>
-          <div className="d-flex align-items-center">
+          <div className="d-flex items-center">
           
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
+          <button className="menu__button" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
           

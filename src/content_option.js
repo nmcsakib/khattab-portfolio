@@ -1,4 +1,4 @@
-const logotext = "https://i.ibb.co/LX1865Xn/khattab-lobo.png";
+const logotext = "https://i.ibb.co/4wh5mGGN/logoKha.png";
 
 const meta = {
     title: "Ahmed Bin Khattab",
@@ -13,7 +13,7 @@ const introdata = {
         third: "I love to work with clients",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://i.ibb.co/5gV32Mrp/model.png",
+    your_img_url: "https://i.ibb.co/5gf4ydjq/model-1.png",
 };
 
 const dataabout = {
@@ -46,17 +46,74 @@ const education = [{
     }
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+const graphicsServices = [{
+        title: "Branding & Identity Design",
+        description: "Logo Design | Brand Identity System | Business Card Design | Letterhead & Envelope | Brand Guidelines | Company Profile Design | ID Card Design | Print & Marketing Collateral | Flyer Design | Brochure Design | Poster Design | Magazine / Catalog | Calendar Design | Roll-up / Pull-up Banner | Billboard Design | Event Backdrop | Invitation / Greeting Card | Wedding / Event Card | Certificate Design | Menu Design (Restaurant / Café) | Resume / CV Design",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Packaging Design",
+        description: "Product Label Design | Box Packaging Design | Bottle / Jar / Can Design | Shopping Bag Design | Food / Cosmetic / E-commerce Package.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Social Media & Digital Content",
+        description: "Facebook / Instagram Post | Social Media Post Design | Cover / Banner Design | YouTube Thumbnail & Channel Branding | Social Media Kit | Animated Post / Short Reels Thumbnails",
+    },
+    {
+        title: "YouTube Thumbnail & Channel Branding",
+        description: "Social Media Kit | Animated Post | Short Reels Thumbnails",
+    },
+    {
+        title: "UI/UX & Web Design",
+        description: "Website UI Design | Dashboard UI | Wireframe & Prototype (Figma).",
+    },
+    {
+        title: "Illustration & Creative Art",
+        description: "Vector Illustration | Character / Mascot Design | T-shirt Graphic",
+    },
+    {
+        title: "Photo Editing & Effects (Photoshop)",
+        description: "Background Removal | Photo Retouching / Beauty Touch-up | Photo Manipulation | Color Correction | Image Restoration | Mockup Presentation Design.",
+    },
+    {
+        title: " Infographics & Presentation",
+        description: "Infographic Design | Business Proposal / Report Design | PowerPoint / Google Slide Presentation",
+    },
+];
+const seoService = [{
+        title: "Search Engine Optimization (SEO)",
+        description: "On-Page SEO Optimization | Technical SEO Audit | Off-Page SEO (High Authority Backlinks) | Local SEO (Google My Business) | Keyword Research & Competitive Analysis | Meta Tags, Alt Text & URL Optimization | Schema Markup & Structured Data | Page Speed & Mobile SEO | SEO Strategy Planning & Consultation",
+    },
+    {
+        title: "Social Media Marketing (SMM)",
+        description: "Facebook & Instagram Marketing | LinkedIn B2B Campaigns | Twitter (X) Brand Engagement | Targeted Ads (Boosting & Retargeting) | Social Media Content Calendar | Page Setup & Optimization | Influencer Collaboration Strategy | Analytics & Growth Tracking",
+    },
+    {
+        title: "Organic Promotion",
+        description: "Consistent Content Publishing | Audience Engagement & Community Building | SEO-Optimized Social Posts | Organic Reach Strategies | Hashtag & Trend Optimization | Manual Group Sharing (Niche Relevant)",
+    },
+    {
+        title: "Paid Advertising (PPC)",
+        description: "Google Ads (Search, Display, Shopping) | Facebook / Instagram Ads | YouTube Video Ads | LinkedIn Sponsored Ads | Remarketing Campaigns | Ad Copywriting & Creative Design | Conversion Rate Optimization (CRO) | Campaign Monitoring & A/B Testing",
+    },
+    {
+        title: "Content Marketing",
+        description: "Blog & Article Writing (SEO Optimized) | Website Content Strategy | Product Descriptions & Sales Copy | Press Release Writing | Visual Content Plan (Infographics, Carousels) | Content Calendar Creation",
+    },
+    {
+        title: "Email Marketing & Automation",
+        description: "Newsletter Design & Campaign Setup | Automated Email Funnel | Lead Magnet & Signup Forms | Drip Campaigns (Abandoned Cart / Welcome Series) | Mailchimp / ConvertKit / ActiveCampaign Integration",
+    },
+    {
+        title: "Analytics & Tracking",
+        description: "Google Analytics 4 Setup | Google Tag Manager Integration | Facebook Pixel / LinkedIn Insight Tag | Conversion & Event Tracking | Monthly Performance Reports | Heatmaps & Behavior Analysis",
+    },
+    {
+        title: "eCommerce Marketing",
+        description: "Product SEO (Title, Tags, Schema) | WooCommerce / Shopify Optimization | Google Shopping Ads | Upsell & Cross-sell Strategy | Instagram & Facebook Shop Setup | Abandoned Cart Recovery",
+    },
+    {
+        title: "Online Reputation & Review Management",
+        description: "Google Reviews & Reputation Monitoring | Trustpilot, Yelp & Facebook Reviews Strategy | Brand Mention Alerts",
     },
 ];
 
@@ -216,7 +273,8 @@ export {
     dataportfolio,
     worktimeline,
     GSskills,
-    services,
+    graphicsServices,
+    seoService,
     introdata,
     contactConfig,
     socialprofils,

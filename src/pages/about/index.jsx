@@ -8,7 +8,8 @@ import {
   meta,
   worktimeline,
   education,
-  services,
+  graphicsServices,
+  seoService,
 } from "../../content_option";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
@@ -88,7 +89,7 @@ export const About = () => {
             <h3 className="color_sec py-4">Graphics <br/> services</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {graphicsServices.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
@@ -103,7 +104,7 @@ export const About = () => {
             <h3 className="color_sec py-4">SEO <br/> services</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {seoService.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>

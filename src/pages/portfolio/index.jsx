@@ -68,7 +68,7 @@ export const Portfolio = () => {
                     imageToLoad={data.img}
 
 
-                    Spinner={() => <div className="h-96 w-20"><FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" /></div>}
+                    Spinner={() => <div className=""><FiLoader className="text-[2.8rem] animate-spin text-[#3B9DF8]" /></div>}
                   >
                     <img src={data.img} alt="" style={{ cursor: 'pointer', position: 'relative', zIndex: '10' }} />
                   </HideUntilLoaded>
@@ -77,9 +77,9 @@ export const Portfolio = () => {
             ))}
           </div>
           <div className="content">
-            <h1 className='text-lg' data-content="KHATTAB GRAPHICS">KHATTAB <br /> GRAPHICS</h1>
+            <h1 className='text-lg' data-content="‎  GRAPHICS">KHATTAB <br /> GRAPHICS</h1>
 
-            <div className="model "></div>
+            <div className="model"></div>
           </div>
         </div>
           <div className='flex w-full justify-center items-center'>

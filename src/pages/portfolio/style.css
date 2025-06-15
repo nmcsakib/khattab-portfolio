@@ -1,76 +1,7 @@
-/* .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
-}
-
-.po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
-}
-
-.po_item img {
-    max-width: 100%;
-}
-
-.po_item .content {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    border: 1px solid black;
-}
-
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
-}
-
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.po_item img{
-    filter: grayscale(1);
-}
-
-.po_item img:hover{
-    filter: grayscale(0);
-} */
-
-
-
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 .banner {
-    width: 100vw;
     height: 100vh;
     text-align: center;
     overflow: hidden;
@@ -85,7 +16,6 @@
     top: 10%;
     left: 40%;
     transform-style: preserve-3d;
-    transform: perspective(1000px);
     animation: autoRun 40s linear infinite;
     z-index: 2;
     
@@ -107,11 +37,11 @@
     position: absolute;
     inset: 0 0 0 0;
     transform:
-        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(400px);
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(350px);
 }
 
 .banner .slider .item img {
-    width: 70%;
+    width: 150px;
     height: 200px;
     object-fit: cover;
    
@@ -139,10 +69,17 @@
     line-height: 1em;
     color: #25283B;
     position: relative;
-
-    -webkit-text-stroke: 2px #d2d2d2;
+    left: 0%;
 }
 
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
 
 
 .banner .content h2 {
@@ -150,7 +87,7 @@
 }
 
 .banner .content .model {
-    background-image: url(https://i.ibb.co/5gV32Mrp/model.png);
+    background-image: url(https://i.ibb.co/5gf4ydjq/model-1.png);
     width: 100%;
     height: 90%;
     position: absolute;
@@ -169,6 +106,19 @@
         left: calc(50% - 80px);
     }
 
+      .banner .content .model {
+    z-index: 10;
+    background-size: auto 130%;
+    height:70vh;
+    background-position: 50% 50%;
+    }
+
+    .banner .content h1 {
+
+        bottom: 15rem;
+        left: 10%;
+    }
+
     .banner .slider .item {
         transform:
             rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
@@ -176,17 +126,6 @@
 
     .banner .content h1 {
         font-size: 5em;
-    }
-
-    .banner .content .author {
-        color: #fff;
-        padding: 20px;
-        text-shadow: 0 10px 20px #000;
-        z-index: 2;
-        max-width: unset;
-        width: 100%;
-        text-align: center;
-        padding: 0 30px;
     }
 }
 
@@ -196,17 +135,21 @@
         height: 350px;
     }
     .banner .content .model {
-        display: none;
+    z-index: 10;
+    background-size: auto 180%;
+    height: 50vh;
+    background-position: 50% 30%;
     }
 
     .banner .slider .item img {
-    height: 100%;
+    height: 80px;
+    width: 70px;
 }
 
     .banner .slider {
-        width: 100px;
+        width: 50px;
         height: 150px;
-        left: calc(55%);
+        left: calc(45%);
     }
 
     .banner .slider .item {
@@ -215,8 +158,10 @@
     }
 
     .banner .content h1 {
-        font-size: 60px;
+        font-size: 4rem;
         text-align: center;
+        top: 0;
+        left: 5%;
         
     }
     .banner .content h1::after {

@@ -7,6 +7,7 @@
 
 .menu__button {
     color: var(--text-color);
+    padding-right: 30px;
     
 }
 
@@ -21,7 +22,7 @@
     height: 2em;
     fill: var(--text-color-2);
     color: var(--text-color-2);
-    margin-top: 50px;
+    
 }
 
 .nav_ac {

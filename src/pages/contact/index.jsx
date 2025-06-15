@@ -156,6 +156,10 @@ export const ContactUs = () => {
                   <button className="border px-3 py-2 active:text-[#494949] transition-all" type="submit">
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
+                  <p className="px-3 inline">or</p>
+                  <a href="https://google.com" target="_blank" className="border px-3 py-2 active:text-[#494949] transition-all" rel="noreferrer">
+                    Hire Me
+                  </a>
                 </Col>
               </Row>
             </form>

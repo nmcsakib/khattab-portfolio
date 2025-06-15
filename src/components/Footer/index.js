@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <Link to='/' className="footer-logo flex justify-center items-center invert-25"><img className="w-36" src={logotext} alt="khattab logo"/></Link>
+        <Link to='/' className="footer-logo flex justify-center items-center invert-25"><img className="w-16 invert" src={logotext} alt="khattab logo"/></Link>
         <nav className="footer-nav">
           <Link to='/' className="footer-link">Home</Link>
           <Link to='/about' className="footer-link">About Me</Link>
